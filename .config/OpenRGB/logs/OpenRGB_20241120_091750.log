@@ -1,0 +1,85 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241120_091750
+====================================================================================================
+
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    |               Start device detection               |
+1002  |Info:    ------------------------------------------------------
+1003  |Info:    Initializing HID interfaces: Success
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    |             Detecting I2C interfaces               |
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:2803 Subsystem: 1458:40F9
+1011  |Info:    Registering I2C interface: /dev/i2c-10 Device 0000:0000 Subsystem: 0000:0000
+1012  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:2803 Subsystem: 1458:40F9
+1012  |Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1012  |Info:    Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 1458:5001
+1012  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:2803 Subsystem: 1458:40F9
+1012  |Info:    Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+1012  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:2803 Subsystem: 1458:40F9
+1012  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:2803 Subsystem: 1458:40F9
+1012  |Info:    Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+1012  |Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+1012  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:2803 Subsystem: 1458:40F9
+1012  |Info:    Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+1012  |Info:    ------------------------------------------------------
+1012  |Info:    |               Detecting I2C devices                |
+1012  |Info:    ------------------------------------------------------
+1410  |Info:    ------------------------------------------------------
+1410  |Info:    |               Detecting I2C PCI devices            |
+1410  |Info:    ------------------------------------------------------
+1410  |Info:    ------------------------------------------------------
+1410  |Info:    |               Detecting HID devices                |
+1410  |Info:    ------------------------------------------------------
+1575  |Info:    [B760M DS3H DDR4] Registering RGB controller
+1576  |Info:    ------------------------------------------------------
+1576  |Info:    |            Detecting libusb HID devices            |
+1576  |Info:    ------------------------------------------------------
+1584  |Info:    ------------------------------------------------------
+1584  |Info:    |              Detecting other devices               |
+1584  |Info:    ------------------------------------------------------
+1589  |Info:    ------------------------------------------------------
+1589  |Info:    |                Detection completed                 |
+1589  |Info:    ------------------------------------------------------
+204321|Info:    ------------------------------------------------------
+204321|Info:    |               Start device detection               |
+204321|Info:    ------------------------------------------------------
+204321|Info:    Initializing HID interfaces: Success
+204327|Info:    ------------------------------------------------------
+204327|Info:    |             Detecting I2C interfaces               |
+204327|Info:    ------------------------------------------------------
+204327|Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:2803 Subsystem: 1458:40F9
+204327|Info:    Registering I2C interface: /dev/i2c-10 Device 0000:0000 Subsystem: 0000:0000
+204327|Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:2803 Subsystem: 1458:40F9
+204327|Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+204327|Info:    Registering I2C interface: /dev/i2c-6 Device 8086:7A23 Subsystem: 1458:5001
+204327|Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:2803 Subsystem: 1458:40F9
+204327|Info:    Registering I2C interface: /dev/i2c-11 Device 0000:0000 Subsystem: 0000:0000
+204327|Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:2803 Subsystem: 1458:40F9
+204327|Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:2803 Subsystem: 1458:40F9
+204327|Info:    Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+204327|Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+204327|Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:2803 Subsystem: 1458:40F9
+204327|Info:    Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+204327|Info:    ------------------------------------------------------
+204327|Info:    |               Detecting I2C devices                |
+204327|Info:    ------------------------------------------------------
+204734|Info:    ------------------------------------------------------
+204734|Info:    |               Detecting I2C PCI devices            |
+204734|Info:    ------------------------------------------------------
+204736|Info:    ------------------------------------------------------
+204736|Info:    |               Detecting HID devices                |
+204736|Info:    ------------------------------------------------------
+204900|Info:    [B760M DS3H DDR4] Registering RGB controller
+204901|Info:    ------------------------------------------------------
+204901|Info:    |            Detecting libusb HID devices            |
+204901|Info:    ------------------------------------------------------
+204904|Info:    ------------------------------------------------------
+204904|Info:    |              Detecting other devices               |
+204904|Info:    ------------------------------------------------------
+204906|Info:    ------------------------------------------------------
+204906|Info:    |                Detection completed                 |
+204906|Info:    ------------------------------------------------------
+279525|Info:    Found file: led.orp attempting to validate header
+279526|Info:    Valid v4 profile found for led
