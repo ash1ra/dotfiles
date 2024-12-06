@@ -1,0 +1,11 @@
+@define-color text @primary1;
+@define-color text-active @primary-active;
+@define-color background @background-dark;
+@define-color border @background-light;
+
+@define-color primary-active #FDFDA5;
+@define-color primary1 #BFED81;
+@define-color primary2 #6F9F32;
+@define-color primary3 #4E7E1A;
+@define-color background-light #272D1F;
+@define-color background-dark #12140F;

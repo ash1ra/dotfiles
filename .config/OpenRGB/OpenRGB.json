@@ -1325,7 +1325,7 @@
         "theme": "dark"
     },
     "UserInterface": {
-        "RunZoneChecks": true,
+        "RunZoneChecks": false,
         "exit_profile": {
             "profile_name": "led",
             "set_on_exit": false
