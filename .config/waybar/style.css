@@ -1,4 +1,4 @@
-@import "../themes/green/style.css";
+@import "../themes/terminal/style.css";
 
 * {
     font-family: "JetBrainsMonoNL Nerd Font";
@@ -19,7 +19,8 @@ tooltip {
 }
 
 tooltip label {
-    color: @text;
+    color: @text-active;
+    text-shadow: 0px 0px 3px @text-active;
 }
 
 #workspaces button {
@@ -29,11 +30,15 @@ tooltip label {
     border: none;
     border-radius: 0px;
     box-shadow: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    text-shadow: 0px 0px 5px @text;
 }
 
 #workspaces button.active {
     color: @text-active;
     border-top: 2px solid @text-active;
+    text-shadow: 0px 0px 5px @text-active;
 }
 
 #cpu,
@@ -42,9 +47,10 @@ tooltip label {
 #wireplumber, 
 #language,
 #clock,
-#group-power * {
+#control-panel * {
     padding: 0 10px;
     transition: .2s;
+    text-shadow: 0px 0px 5px @text;
 }
 
 #cpu:hover,
@@ -53,6 +59,12 @@ tooltip label {
 #wireplumber:hover,
 #language:hover,
 #clock:hover,
-#group-power *:hover {
+#control-panel *:hover {
     color: @text-active;
+    text-shadow: 0px 0px 5px @text-active;
+}
+
+#calendar {
+    background-color: @background;
+    color: @text;
 }

@@ -12,7 +12,7 @@
         "wireplumber",
         "hyprland/language",
         "clock",
-        "group/group-power"
+        "group/control-panel"
     ],
     "reload_style_on_change": true,
     "hyprland/workspaces": {
@@ -37,6 +37,7 @@
     "memory": {
         "interval": 1,
         "format": "RAM {used:0.1f}G",
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G",
     },
     "wireplumber": {
         "format": "VOL {volume}%",
@@ -58,11 +59,11 @@
             "weeks-pos"     : "right",
             "on-scroll"     : 1,
             "format": {
-                "months":     "<span color='#ffead3'><b>{}</b></span>",
-                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                "today":      "<span color='#ff6699'><b>{}</b></span>"
+                "months":     "<span color='#FDFDA5'><b>{}</b></span>",
+                "days":       "<span color='#BFED81'><b>{}</b></span>",
+                "weeks":      "<span color='#FDFDA5'><b>W{}</b></span>",
+                "weekdays":   "<span color='#FDFDA5'><b>{}</b></span>",
+                "today":      "<span color='#FDFDA5'><b>{}</b></span>"
             }
         },
         "actions":  {
@@ -77,11 +78,11 @@
         "format-en": "EN",
         "format-ru": "RU"
     },
-    "group/group-power": {
+    "group/control-panel": {
         "orientation": "horizontal",
         "drawer": {
             "transition-duration": 500,
-            "children-class": "not-power",
+            "children-class": "control-panel-child",
             "transition-left-to-right": false,
         },
         "modules": [
