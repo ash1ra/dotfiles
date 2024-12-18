@@ -1,4 +1,4 @@
-@import "../themes/terminal/style.css";
+@import "../themes/dark/style.css";
 
 * {
     font-family: "JetBrainsMonoNL Nerd Font";
@@ -8,37 +8,37 @@
 }
 
 window#waybar {
-    background-color: @background;
-    color: @text;
-    border-top: 2px solid @background;
+    background-color: @bg-color;
+    color: @text-color;
+    border-top: 2px solid @bg-color;
 }
 
 tooltip {
-    background-color: @background;
-    border: 2px solid @border;
+    background-color: @bg-color;
+    border: 2px solid @main-color;
 }
 
 tooltip label {
-    color: @text-active;
-    text-shadow: 0px 0px 3px @text-active;
+    color: @text-color-active;
+    text-shadow: 0px 0px 3px @text-color-active;
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: @text;
+    color: @text-color;
     border: none;
     border-radius: 0px;
     box-shadow: none;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
-    text-shadow: 0px 0px 5px @text;
+    text-shadow: 0px 0px 5px @text-color;
 }
 
 #workspaces button.active {
-    color: @text-active;
-    border-top: 2px solid @text-active;
-    text-shadow: 0px 0px 5px @text-active;
+    color: @text-color-active;
+    border-top: 2px solid @text-color-active;
+    text-shadow: 0px 0px 5px @text-color-active;
 }
 
 #cpu,
@@ -50,7 +50,7 @@ tooltip label {
 #control-panel * {
     padding: 0 10px;
     transition: .2s;
-    text-shadow: 0px 0px 5px @text;
+    text-shadow: 0px 0px 5px @text-color;
 }
 
 #cpu:hover,
@@ -61,10 +61,10 @@ tooltip label {
 #clock:hover,
 #control-panel *:hover {
     color: @text-active;
-    text-shadow: 0px 0px 5px @text-active;
+    text-shadow: 0px 0px 5px @text-color-active;
 }
 
 #calendar {
-    background-color: @background;
-    color: @text;
+    background-color: @bg-color;
+    color: @text-color;
 }
