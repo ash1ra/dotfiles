@@ -8,37 +8,37 @@
 }
 
 window#waybar {
-    background-color: @bg-color;
-    color: @text-color;
-    border-top: 2px solid @bg-color;
+    background-color: @waybar-background-color;
+    color: @waybar-foreground-color;
+    border-top: 2px solid @waybar-border-color-inactive;
 }
 
 tooltip {
-    background-color: @bg-color;
-    border: 2px solid @main-color;
+    background-color: @waybar-background-color;
+    border: 2px solid @waybar-border-color-active;
 }
 
 tooltip label {
-    color: @text-color-active;
-    text-shadow: 0px 0px 3px @text-color-active;
+    color: @waybar-active-text-color;
+    text-shadow: 0px 0px 3px @waybar-text-color-active;
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: @text-color;
+    color: @waybar-text-color-inactive;
     border: none;
     border-radius: 0px;
     box-shadow: none;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
-    text-shadow: 0px 0px 5px @text-color;
+    text-shadow: 0px 0px 5px @waybar-text-color-inactive;
 }
 
 #workspaces button.active {
-    color: @text-color-active;
-    border-top: 2px solid @text-color-active;
-    text-shadow: 0px 0px 5px @text-color-active;
+    color: @waybar-text-color-active;
+    border-top: 2px solid @waybar-border-color-active;
+    text-shadow: 0px 0px 5px @waybar-text-color-active;
 }
 
 #cpu,
@@ -50,7 +50,7 @@ tooltip label {
 #control-panel * {
     padding: 0 10px;
     transition: .2s;
-    text-shadow: 0px 0px 5px @text-color;
+    text-shadow: 0px 0px 5px @waybar-text-color-inactive;
 }
 
 #cpu:hover,
@@ -61,10 +61,10 @@ tooltip label {
 #clock:hover,
 #control-panel *:hover {
     color: @text-active;
-    text-shadow: 0px 0px 5px @text-color-active;
+    text-shadow: 0px 0px 5px @waybar-text-color-active;
 }
 
 #calendar {
-    background-color: @bg-color;
-    color: @text-color;
+    background-color: @waybar-background-color;
+    color: @waybar-text-color-inactive;
 }

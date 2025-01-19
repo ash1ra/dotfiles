@@ -16,7 +16,7 @@ process_css_file() {
         if [[ $line =~ @define-color[[:space:]]+([[:alnum:]_-]+)[[:space:]]+#([[:xdigit:]]{6})\; ]]; then
             local color_name="${BASH_REMATCH[1]}"
             local color_value="${BASH_REMATCH[2]}"
-            echo "\$${color_name} = rgb(${color_value})" >> "$temp_file"
+            echo "\$${color_name} = ${color_value}" >> "$temp_file"
         fi
     done < "$css_file"
 
@@ -33,7 +33,7 @@ process_css_file() {
         touch "$conf_file"
     else
         # Remove old color definitions if file exists
-        sed -i '/^\$.*= rgb(.*)$/d' "$conf_file"
+        sed -i '/^\$.*= .*$/d' "$conf_file"
     fi
 
     # Add new color definitions
