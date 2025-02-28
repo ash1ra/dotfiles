@@ -1,4 +1,4 @@
-@import "../themes/current_theme.css";
+@import "./kokou-no-hito.css";
 
 * {
     font-family: "JetBrainsMonoNL Nerd Font";
@@ -8,37 +8,37 @@
 }
 
 window#waybar {
-    background-color: @waybar-background-color;
-    color: @waybar-foreground-color;
-    border-top: 2px solid @waybar-border-color-inactive;
+    background-color: @background-color;
+    color: @foreground-color;
+    border-top: 2px solid @border-color-inactive;
 }
 
 tooltip {
-    background-color: @waybar-background-color;
-    border: 2px solid @waybar-border-color-active;
+    background-color: @background-color;
+    border: 2px solid @border-color-active;
 }
 
 tooltip label {
-    color: @waybar-active-text-color;
-    text-shadow: 0px 0px 3px @waybar-text-color-active;
+    color: @active-text-color;
+    text-shadow: 0px 0px 3px @text-color-active;
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: @waybar-text-color-inactive;
+    color: @text-color-inactive;
     border: none;
     border-radius: 0px;
     box-shadow: none;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
-    text-shadow: 0px 0px 5px @waybar-text-color-inactive;
+    text-shadow: 0px 0px 5px @text-color-inactive;
 }
 
 #workspaces button.active {
-    color: @waybar-text-color-active;
-    border-top: 2px solid @waybar-border-color-active;
-    text-shadow: 0px 0px 5px @waybar-text-color-active;
+    color: @text-color-active;
+    border-top: 2px solid @border-color-active;
+    text-shadow: 0px 0px 5px @text-color-active;
 }
 
 #cpu,
@@ -50,7 +50,7 @@ tooltip label {
 #control-panel * {
     padding: 0 10px;
     transition: .2s;
-    text-shadow: 0px 0px 5px @waybar-text-color-inactive;
+    text-shadow: 0px 0px 5px @text-color-inactive;
 }
 
 #cpu:hover,
@@ -61,10 +61,10 @@ tooltip label {
 #clock:hover,
 #control-panel *:hover {
     color: @text-active;
-    text-shadow: 0px 0px 5px @waybar-text-color-active;
+    text-shadow: 0px 0px 5px @text-color-active;
 }
 
 #calendar {
-    background-color: @waybar-background-color;
-    color: @waybar-text-color-inactive;
+    background-color: @background-color;
+    color: @text-color-inactive;
 }

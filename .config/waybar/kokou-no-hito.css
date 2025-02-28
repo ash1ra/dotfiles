@@ -1,0 +1,6 @@
+@define-color background-color #111111;
+@define-color foreground-color #bfbfbf;
+@define-color border-color-inactive #111111;
+@define-color border-color-active #eeeeee;
+@define-color text-color-inactive #bfbfbf;
+@define-color text-color-active #eeeeee;
