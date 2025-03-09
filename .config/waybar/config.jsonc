@@ -53,6 +53,12 @@
         "format": "{:%H:%M}",
         "format-alt": "{:%d.%m.%Y %H:%M}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "today": "<span color='#f0f0f0'>{}</span>"
+            }
+        }
     },
     "hyprland/language": {
         "format": "LANG {}",
