@@ -1,0 +1,19 @@
+font = JetBrainsMonoNL Nerd Font
+font-size = 16
+
+width = 600
+height = 300
+border-width = 3
+corner-radius = 5
+outline-width = 0
+result-spacing = 20
+num-results = 5
+prompt-text = ""
+hint-font = false
+
+background-color = #151515
+text-color = #c5c5c5
+selection-color = #f5f5f5
+selection-background = #151515
+border-color = #f5f5f5
+selection-background-padding = 10
