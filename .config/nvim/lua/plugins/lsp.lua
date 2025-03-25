@@ -9,7 +9,11 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_install = { "lua_ls", "stylua" },
+				ensure_install = {
+					"lua_ls",
+					"pyright",
+				},
+				automatic_installation = true,
 			})
 		end,
 	},
@@ -21,9 +25,20 @@ return {
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
-
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
+			lspconfig.pyright.setup({ capabilities = capabilities })
+		end,
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		config = function()
+			require("mason-tool-installer").setup({
+				ensure_installed = {
+					"stylua",
+					"ruff",
+					"prettier",
+					"shfmt",
+				},
+			})
 		end,
 	},
 }

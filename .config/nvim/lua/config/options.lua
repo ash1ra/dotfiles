@@ -8,11 +8,16 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
+
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
+vim.o.hlsearch = false
+vim.o.incsearch = true
+
 vim.o.termguicolors = true
 
-vim.clipboard = "unnamedplus"
+vim.o.scrolloff = 12
+vim.o.sidescrolloff = 12
 
-vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
-vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
-vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
-vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+vim.clipboard = "unnamedplus"
