@@ -20,6 +20,9 @@ return {
 				auto_show_delay_ms = 0,
 			},
 		},
+		cmdline = {
+			enabled = false,
+		},
 		signature = {
 			enabled = true,
 		},

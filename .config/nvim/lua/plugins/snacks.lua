@@ -20,8 +20,14 @@ return {
 				-- },
 			},
 		},
+		picker = {
+			hidden = true,
+			ignored = true,
+		},
 		explorer = {
 			enabled = true,
+			hidden = true,
+			ignored = true,
 			layout = {
 				cycle = false,
 			},
