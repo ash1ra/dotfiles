@@ -20,4 +20,5 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
-files
+/files
+/tmp
