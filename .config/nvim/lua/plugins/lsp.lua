@@ -10,8 +10,16 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_install = {
+					"cssls",
+					"css_variables",
+					"cssmodules_ls",
 					"lua_ls",
+					"oxlint",
+					"prettier",
 					"pyright",
+					"ruff",
+					"shfmt",
+					"stylua",
 				},
 				automatic_installation = true,
 			})
@@ -26,22 +34,13 @@ return {
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
+			lspconfig.oxlint.setup({ capabilities = capabilities })
+			lspconfig.css_variables.setup({ capabilities = capabilities })
+			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.cssmodules_ls.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
-		end,
-	},
-	{
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		config = function()
-			require("mason-tool-installer").setup({
-				ensure_installed = {
-					"stylua",
-					"ruff",
-					"prettier",
-					"shfmt",
-				},
-			})
 		end,
 	},
 }

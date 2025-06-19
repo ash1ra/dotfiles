@@ -63,7 +63,7 @@
     "hyprland/language": {
         "format": "LANG {}",
         "format-en": "EN",
-        "format-ru": "RU"
+        "format-ru": "RU",
     },
     "group/control-panel": {
         "orientation": "horizontal",
