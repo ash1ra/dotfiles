@@ -42,7 +42,7 @@ return {
 			desc = "Colorschemes",
 		},
 		{
-			"<leader>n",
+			"<leader>e",
 			function()
 				require("snacks").explorer()
 			end,
