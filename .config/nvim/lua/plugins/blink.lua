@@ -1,11 +1,10 @@
 return {
 	"saghen/blink.cmp",
-	-- dependencies = "rafamadriz/friendly-snippets",
+	dependencies = "echasnovski/mini.snippets",
 	version = "1.*",
 	opts = {
 		keymap = { preset = "enter" },
 		appearance = {
-			use_nvim_cmp_as_default = true,
 			nerd_font_variant = "mono",
 		},
 		completion = {
@@ -26,6 +25,7 @@ return {
 		signature = {
 			enabled = true,
 		},
+		snippets = { preset = "mini_snippets" },
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },
 		},
