@@ -4,7 +4,7 @@ vim.lsp.enable({
 	"cssmodules_ls",
 	"html",
 	"lua_ls",
-	"oxlint",
+	-- "oxlint",
 	"pyright",
 	"ruff",
 	-- "ty",

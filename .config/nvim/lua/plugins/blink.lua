@@ -25,7 +25,7 @@ return {
 		signature = {
 			enabled = true,
 		},
-		snippets = { preset = "mini_snippets" },
+		-- snippets = { preset = "mini_snippets" },
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },
 		},
