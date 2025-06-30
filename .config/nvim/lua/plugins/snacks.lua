@@ -2,6 +2,22 @@ return {
 	"folke/snacks.nvim",
 	priority = 1000,
 	lazy = false,
+	keys = {
+		{
+			"<leader>th",
+			function()
+				require("snacks").picker.colorschemes()
+			end,
+			desc = "Colorschemes",
+		},
+		{
+			"<leader>e",
+			function()
+				require("snacks").explorer()
+			end,
+			desc = "File Explorer",
+		},
+	},
 	opts = {
 		dashboard = {
 			enabled = true,
@@ -31,22 +47,6 @@ return {
 			layout = {
 				cycle = false,
 			},
-		},
-	},
-	keys = {
-		{
-			"<leader>th",
-			function()
-				require("snacks").picker.colorschemes()
-			end,
-			desc = "Colorschemes",
-		},
-		{
-			"<leader>e",
-			function()
-				require("snacks").explorer()
-			end,
-			desc = "File Explorer",
 		},
 	},
 }

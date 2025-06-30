@@ -1,12 +1,17 @@
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
+	keys = {
+		{
+			"<leader>wk",
+			function()
+				require("which-key").show({ global = false })
+			end,
+			mode = { "n" },
+			desc = "Buffer local keymaps (which-key)",
+		},
+	},
 	opts = {
 		preset = "modern",
 	},
-	config = function()
-		vim.keymap.set("n", "<leader>wk", function()
-			require("which-key").show({ global = false })
-		end, { desc = "Buffer Local Keymaps (which-key)" })
-	end,
 }

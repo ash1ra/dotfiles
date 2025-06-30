@@ -1,5 +1,15 @@
 return {
 	"mfussenegger/nvim-lint",
+	keys = {
+		{
+			"<leader>l",
+			function()
+				require("lint").try_lint()
+			end,
+			mode = { "n" },
+			desc = "Trigger linting for current file",
+		},
+	},
 	config = function()
 		local lint = require("lint")
 
@@ -13,9 +23,5 @@ return {
 				lint.try_lint()
 			end,
 		})
-
-		vim.keymap.set("n", "<leader>l", function()
-			require("lint").try_lint()
-		end, { desc = "Trigger linting for current file" })
 	end,
 }
