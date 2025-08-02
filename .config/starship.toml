@@ -14,9 +14,9 @@ $character \
 """
 
 [character]
-format = "\n$symbol "
-success_symbol = '[\$](fg:#ffffff)'
-error_symbol = '[\$](fg:#ffffff)'
+format = "\n¥"
+success_symbol = '[\¥](fg:#ffffff)'
+error_symbol = '[\¥](fg:#ffffff)'
 
 [directory]
 style = 'fg:#ffffff'
