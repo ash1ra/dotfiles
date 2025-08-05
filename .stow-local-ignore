@@ -20,5 +20,6 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
-/files
-/tmp
+.*\.bak$
+.*/files.*
+.*/tmp.*
