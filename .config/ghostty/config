@@ -1,5 +1,13 @@
-background = 111111
-foreground = eeeeee
+theme = kokou-no-hito
+
+# will be available in 1.2.0 release
+custom-shader = shaders/cursor_smear.glsl
 
 font-family = JetBrainsMonoNL Nerd Font
 font-size = 14
+
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+
+background-opacity = 0.95
