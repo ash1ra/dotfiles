@@ -1,11 +1,7 @@
-# add_newline = false
-
 format = """
 $directory \
 $git_branch \
-$git_commit\
 $git_state\
-$git_metrics\
 $git_status\
 $fill \
 $python \
@@ -13,31 +9,36 @@ $cmd_duration \
 $character \
 """
 
-[character]
-format = "\n¥"
-success_symbol = '[\¥](fg:#ffffff)'
-error_symbol = '[\¥](fg:#ffffff)'
-
 [directory]
-style = 'fg:#ffffff'
-
-[cmd_duration]
-format = '\[[$duration]($style)\] '
-style = 'fg:#ffffff'
-
-[fill]
-symbol = ' '
-
-[python]
-format = '\[[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\))]($style)\]'
-style = 'fg:#ffffff'
-symbol = 'Python '
+format = "\\[[$path]($style)[$read_only]($read_only_style)\\]"
+style = "fg:#ffffff"
 
 [git_branch]
-format = '\[[$symbol$branch(:$remote_branch)]($style)\]'
-style = 'fg:#ffffff'
-symbol = 'branch: '
+format = "\\[[$symbol $branch(:$remote_branch)]($style)\\]"
+style = "fg:#ffffff"
+symbol = "BRANCH:"
+
+[git_state]
+format = "\\[[$state ($progress_current/$progress_total)]($style)\\]"
+style = "fg:#ffffff"
 
 [git_status]
-style = 'fg:#ffffff'
-deleted = 'x'
+style = "fg:#ffffff"
+deleted = "x"
+
+[fill]
+symbol = " "
+
+[python]
+format = "\\[[$symbol $pyenv_prefix($version) (\\($virtualenv\\))]($style)\\]"
+style = "fg:#ffffff"
+symbol = "Python"
+
+[cmd_duration]
+format = "\\[[$duration]($style)\\] "
+style = "fg:#ffffff"
+
+[character]
+format = "\n¥"
+success_symbol = "[¥](fg:#ffffff)"
+error_symbol = "[¥](fg:#ffffff)"
