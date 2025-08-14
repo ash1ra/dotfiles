@@ -11,3 +11,5 @@ cursor-style = block
 cursor-style-blink = false
 
 background-opacity = 0.95
+
+command = zsh --login
