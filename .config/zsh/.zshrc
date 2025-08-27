@@ -18,4 +18,12 @@ export KEYTIMEOUT=5
 eval "$(starship init zsh)"
 # eval "$(zoxide init zsh)"
 
-alias s="source .venv/bin/activate"
+source_venv() {
+	if [ $# -eq 0 ]; then
+		source .venv/bin/activate
+	else
+		source "$1"/bin/activate
+	fi
+}
+
+alias s="source_venv"
