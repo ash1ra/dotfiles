@@ -3,6 +3,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 export ZDOTDIR="$HOME/.config/zsh"
+export PATH="$PATH:$HOME/.config/scripts"
 
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export FASTAI_HOME="$XDG_DATA_HOME/.fastai"
