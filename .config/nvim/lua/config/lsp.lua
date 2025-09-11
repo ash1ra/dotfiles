@@ -1,1 +1,1 @@
-vim.lsp.enable({ "lua_ls", "zls", "bashls" })
+vim.lsp.enable({ "lua_ls", "bashls", "ruff" })
