@@ -2,6 +2,7 @@ vim.pack.add({
 	{ src = "https://github.com/metalelf0/black-metal-theme-neovim" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/saghen/blink.cmp",                  version = vim.version.range("^1") },
+	{ src = "https://github.com/nvim-mini/mini.nvim" },
 })
 
 -- Colorscheme
@@ -40,3 +41,9 @@ require('blink.cmp').setup({
 	},
 
 })
+
+-- mini.nvim
+require("mini.move").setup()
+require("mini.pairs").setup()
+require("mini.splitjoin").setup()
+require("mini.surround").setup()
