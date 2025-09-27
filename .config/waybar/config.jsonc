@@ -32,26 +32,26 @@
     },
     "cpu": {
         "interval": 1,
-        "format": "CPU {usage}%",
+        "format": "[CPU {usage}%]",
     },
     "memory": {
         "interval": 1,
-        "format": "RAM {used:0.1f}G",
-        "tooltip-format": "{used:0.1f}G/{total:0.1f}G",
+        "format": "[RAM {used:0.1f}G]",
+        "tooltip-format": "[{used:0.1f}G/{total:0.1f}G]",
     },
     "wireplumber": {
-        "format": "VOL {volume}%",
+        "format": "[VOL {volume}%]",
         "on-click": "pavucontrol",
     },
     "network": {
         "interval": 1,
-        "format-ethernet": "ETH {bandwidthTotalBytes}",
-        "format-disconnected": "no signal",
-        "tooltip-format-ethernet": "{bandwidthUpBytes} | {bandwidthDownBytes}"
+        "format-ethernet": "[ETH {bandwidthTotalBytes}]",
+        "format-disconnected": "[no signal]",
+        "tooltip-format-ethernet": "[{bandwidthUpBytes} | {bandwidthDownBytes}]"
     },
     "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%d.%m.%Y %H:%M}",
+        "format": "[DAY {:%d %H:%M}]",
+        "format-alt": "[{:%H:%M}]",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "month",
@@ -61,14 +61,14 @@
         }
     },
     "hyprland/language": {
-        "format": "LANG {}",
+        "format": "[LANG {}]",
         "format-en": "EN",
         "format-ru": "RU",
     },
     "group/control-panel": {
         "orientation": "horizontal",
         "drawer": {
-            "transition-duration": 500,
+            "transition-duration": 0,
             "children-class": "control-panel-child",
             "transition-left-to-right": false,
         },
@@ -80,22 +80,22 @@
         ]
     },
     "custom/quit": {
-        "format": "EXIT",
+        "format": "[EXIT]",
         "tooltip": false,
         "on-click": "hyprctl dispatch exit"
     },
     "custom/lock": {
-        "format": "LOCK",
+        "format": "[LOCK]",
         "tooltip": false,
         "on-click": "hyprlock"
     },
     "custom/reboot": {
-        "format": "REBOOT",
+        "format": "[REBOOT]",
         "tooltip": false,
         "on-click": "reboot"
     },
     "custom/power": {
-        "format": "SHUTDOWN",
+        "format": "[SHUTDOWN]",
         "tooltip": false,
         "on-click": "shutdown now"
     }
