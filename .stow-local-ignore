@@ -23,3 +23,7 @@ _darcs
 .*\.bak$
 .*/files.*
 .*/tmp.*
+
+.*/kitty.*
+.*/river.*
+.*/wofi.*
