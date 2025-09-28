@@ -1,0 +1,36 @@
+[global]
+    geometry = "300x5-30+20"
+    follow = none
+    
+    transparency = 10
+    frame_width = 2
+    frame_color = "#f5f5f5"
+    
+    font = JetBrainsMonoNL Nerd Font 11
+    
+    horizontal_padding = 12
+    vertical_padding = 8
+    
+    icon_position = off
+    
+    layer = overlay
+    monitor = 0
+    idle_threshold = 120
+    sort = yes
+    show_age_threshold = 60
+
+	[urgency_low]
+		background = "#101010"
+		foreground = "#f5f5f5"
+		timeout = 5
+
+	[urgency_normal]
+		background = "#101010"
+		foreground = "#f5f5f5"
+		timeout = 8
+
+	[urgency_critical]
+		background = "#101010"
+		foreground = "#f5f5f5"
+		frame_color = "#f38ba8"
+		timeout = 15
