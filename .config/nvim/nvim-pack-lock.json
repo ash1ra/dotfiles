@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "black-metal-theme-neovim": [],
+    "blink.cmp": {
+      "version": "1.0.0 - 2.0.0"
+    },
+    "mason.nvim": [],
+    "mini.nvim": []
+  }
+}

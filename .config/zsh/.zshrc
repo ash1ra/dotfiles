@@ -27,5 +27,6 @@ source_venv() {
 }
 
 alias v="nvim"
+alias p="python"
 alias s="source_venv"
 alias gtcpm_backup="$HOME/dev/scripts/archive_uploader/archive_uploader.sh '$HOME/Documents/curseforge/minecraft/Instances/GregTech Community Pack Modern/saves/lie' GTCPM"

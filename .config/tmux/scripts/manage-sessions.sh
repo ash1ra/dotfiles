@@ -1,7 +1,6 @@
 #!/bin/bash
 
 DIRS=(
-	"$HOME/dev"
 	"$HOME/dev/NN"
 	"$HOME/dev/scripts"
 	"$HOME/dotfiles/.config"
