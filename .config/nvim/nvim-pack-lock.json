@@ -5,6 +5,10 @@
       "version": "1.0.0 - 2.0.0"
     },
     "mason.nvim": [],
-    "mini.nvim": []
+    "mini.nvim": [],
+    "nvim-treesitter": {
+      "rev": "42fc28ba",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    }
   }
 }

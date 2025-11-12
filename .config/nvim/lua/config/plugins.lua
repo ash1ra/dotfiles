@@ -1,5 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/metalelf0/black-metal-theme-neovim" },
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/saghen/blink.cmp",                  version = vim.version.range("^1") },
 	{ src = "https://github.com/nvim-mini/mini.nvim" },
@@ -7,6 +8,15 @@ vim.pack.add({
 
 -- Colorscheme
 vim.cmd("colorscheme darkthrone")
+
+-- Treesitter
+require("nvim-treesitter.configs").setup({
+	ensure_installed = { "lua", "python" },
+	auto_install = true,
+	highlight = {
+		enable = true,
+	}
+})
 
 -- LSP
 require("mason").setup()
@@ -54,7 +64,6 @@ require('blink.cmp').setup({
 	signature = {
 		enabled = true,
 	},
-	-- snippets = { preset = "mini_snippets" },
 	sources = {
 		default = { "lsp", "path", "snippets", "buffer" },
 	},
