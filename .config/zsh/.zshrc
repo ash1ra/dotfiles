@@ -16,7 +16,6 @@ bindkey -v
 export KEYTIMEOUT=5
 
 eval "$(starship init zsh)"
-# eval "$(zoxide init zsh)"
 
 source_venv() {
 	if [ $# -eq 0 ]; then
@@ -26,7 +25,8 @@ source_venv() {
 	fi
 }
 
+alias untar="tar -xvf"
 alias v="nvim"
 alias p="python"
 alias s="source_venv"
-alias gtcpm_backup="$HOME/dev/scripts/archive_uploader/archive_uploader.sh '$HOME/Documents/curseforge/minecraft/Instances/GregTech Community Pack Modern/saves/lie' GTCPM"
+alias gtcpm_backup="archive_uploader.sh '$HOME/Documents/curseforge/minecraft/Instances/GregTech Community Pack Modern/saves/lie' GTCPM"
