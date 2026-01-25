@@ -1,14 +1,33 @@
 {
   "plugins": {
-    "black-metal-theme-neovim": [],
+    "black-metal-theme-neovim": {
+      "rev": "6d0207871387077f40d5396ab1ae90520e688d36",
+      "src": "https://github.com/metalelf0/black-metal-theme-neovim"
+    },
     "blink.cmp": {
+      "rev": "327fff91fe6af358e990be7be1ec8b78037d2138",
+      "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
-    "mason.nvim": [],
-    "mini.nvim": [],
+    "markview.nvim": {
+      "rev": "fb1f847",
+      "src": "https://github.com/OXY2DEV/markview.nvim"
+    },
+    "mason.nvim": {
+      "rev": "7dc4facca9702f95353d5a1f87daf23d78e31c2a",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mini.nvim": {
+      "rev": "228a8c34fae1d778e895ad06e4158f65e85828bc",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
     "nvim-treesitter": {
       "rev": "42fc28ba",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "peek.nvim": {
+      "rev": "5820d93",
+      "src": "https://github.com/toppair/peek.nvim"
     }
   }
 }
