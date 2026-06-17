@@ -29,4 +29,8 @@ alias untar="tar -xvf"
 alias v="nvim"
 alias p="python"
 alias s="source_venv"
-alias gtcpm_backup="archive_uploader.sh '$HOME/Documents/curseforge/minecraft/Instances/GregTech Community Pack Modern/saves/lie' GTCPM"
+
+alias backup_gtcpm="archive_uploader.sh '$HOME/Documents/curseforge/minecraft/Instances/GregTech Community Pack Modern/saves/lie' GTCPM"
+alias backup_bacap="archive_uploader.sh '$HOME/Documents/curseforge/minecraft/Instances/BlazeandCaves 1.21.11/saves/BACAP v_1' BACAP"
+
+export LFS=/mnt/lfs

@@ -2,6 +2,8 @@
 
 DIRS=(
 	"$HOME/dev/NN"
+	"$HOME/dev/NN/tools"
+	"$HOME/dev/NN/tutorials/"
 	"$HOME/dev/scripts"
 	"$HOME/dotfiles/.config"
 )

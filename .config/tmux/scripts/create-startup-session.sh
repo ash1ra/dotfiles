@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SESSION_NAME="ghostty"
+SESSION_NAME="solitude"
 
 tmux has-session -t $SESSION_NAME 2>/dev/null
 

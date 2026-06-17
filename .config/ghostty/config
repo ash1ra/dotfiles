@@ -3,6 +3,7 @@ theme = kokou-no-hito
 custom-shader = shaders/cursor_smear.glsl
 
 font-family = JetBrainsMonoNL Nerd Font
+# font-family = Monocraft
 font-size = 14
 
 shell-integration-features = no-cursor

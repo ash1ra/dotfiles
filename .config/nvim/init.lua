@@ -17,6 +17,14 @@ local highlights = {
 	"LineNr",
 	"CursorLineNr",
 	"CursorLine",
+	"DiagnosticFloatingError",
+	"DiagnosticFloatingWarn",
+	"DiagnosticFloatingInfo",
+	"DiagnosticFloatingHint",
+	"DiagnosticVirtualTextError",
+	"DiagnosticVirtualTextWarn",
+	"DiagnosticVirtualTextInfo",
+	"DiagnosticVirtualTextHint",
 }
 
 for _, group in ipairs(highlights) do

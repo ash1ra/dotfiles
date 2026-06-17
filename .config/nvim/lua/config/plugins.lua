@@ -4,6 +4,7 @@ vim.pack.add({
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/saghen/blink.cmp",                  version = vim.version.range("^1") },
 	{ src = "https://github.com/nvim-mini/mini.nvim" },
+	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/toppair/peek.nvim" },
 })
 
@@ -11,13 +12,15 @@ vim.pack.add({
 vim.cmd("colorscheme darkthrone")
 
 -- Treesitter
-require("nvim-treesitter.configs").setup({
-	ensure_installed = { "lua", "python" },
+require("nvim-treesitter").setup({
+	ensure_installed = { "lua", "python", "markdown" },
 	auto_install = true,
 	highlight = {
 		enable = true,
 	}
 })
+
+vim.treesitter.language.register("qmljs", "qml")
 
 -- LSP
 require("mason").setup()
@@ -76,6 +79,7 @@ require("mini.move").setup()
 require("mini.pairs").setup()
 require("mini.splitjoin").setup()
 require("mini.surround").setup()
+require("mini.icons").setup()
 
 -- peek
 require('peek').setup({
@@ -96,3 +100,13 @@ require('peek').setup({
 
 vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
 vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+
+-- Oil
+require("oil").setup({
+	default_file_explorer = true,
+	view_options = {
+		show_hidden = true,
+	}
+})
+
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
