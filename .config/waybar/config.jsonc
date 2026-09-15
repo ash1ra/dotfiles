@@ -45,7 +45,7 @@
     },
     "network": {
         "interval": 1,
-        "format-ethernet": "[ETH {bandwidthTotalBytes}]",
+        "format-ethernet": "[NET {bandwidthTotalBytes}]",
         "format-disconnected": "[no signal]",
         "tooltip-format-ethernet": "[{bandwidthUpBytes} | {bandwidthDownBytes}]"
     },

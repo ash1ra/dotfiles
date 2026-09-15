@@ -6,6 +6,7 @@ DIRS=(
 	"$HOME/dev/NN/tutorials/"
 	"$HOME/dev/scripts"
 	"$HOME/dotfiles/.config"
+	"$HOME/.config/quickshell/ashell"
 )
 
 mapfile -t fzf_output < <(
