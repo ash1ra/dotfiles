@@ -1,0 +1,3 @@
+[submodule ".config/zathura"]
+	path = .config/zathura
+	url = git@github.com:project-kokou/zathura.git
