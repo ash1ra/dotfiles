@@ -1,6 +1,6 @@
-[submodule ".config/zathura"]
-	path = .config/zathura
-	url = git@github.com:project-kokou/zathura.git
 [submodule "zathura/.config/zathura"]
 	path = zathura/.config/zathura
 	url = git@github.com:project-kokou/zathura.git
+[submodule "tmux/.config/tmux"]
+	path = tmux/.config/tmux
+	url = git@github.com:project-kokou/tmux.git
