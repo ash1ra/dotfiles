@@ -3,16 +3,15 @@
 DIRS=(
 	"$HOME/dev/NN"
 	"$HOME/dev/NN/tools"
-	"$HOME/dev/NN/tutorials/"
+	"$HOME/dev/NN/tutorials"
 	"$HOME/dev/scripts"
-	"$HOME/dotfiles/.config"
-	"$HOME/.config/quickshell/ashell"
+	"$HOME/dotfiles"
 )
 
 mapfile -t fzf_output < <(
 	find "${DIRS[@]}" -maxdepth 1 -type d,l |
 		sed "s|^$HOME/||" |
-		fzf --reverse --tmux center --color="bw" --print-query --no-select-1
+		fzf --reverse --color="bw" --print-query --no-select-1
 )
 
 if [[ ${#fzf_output[@]} -gt 0 ]]; then
