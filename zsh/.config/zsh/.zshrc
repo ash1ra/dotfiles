@@ -25,6 +25,12 @@ source_venv() {
 	fi
 }
 
+pomo() {
+    local min="${1:-30}"
+    notify-send "Pomodoro" "Focus: $min m."
+    sleep "${min}m" && notify-send -u critical "Pomodoro" "Time's up ($min min)! Take a break."
+}
+
 alias untar="tar -xvf"
 alias v="nvim"
 alias p="python"

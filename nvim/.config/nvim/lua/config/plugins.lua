@@ -1,5 +1,6 @@
 vim.pack.add({
 	{ src = "https://github.com/metalelf0/black-metal-theme-neovim" },
+	{ src = "https://github.com/xiyaowong/transparent.nvim" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/saghen/blink.cmp",                  version = vim.version.range("^1") },
@@ -8,7 +9,34 @@ vim.pack.add({
 	{ src = "https://github.com/toppair/peek.nvim" },
 })
 
--- Colorscheme
+-- Appearance
+local border = "single"
+
+local orig_open_floating_preview = vim.lsp.util.open_floating_preview
+---@diagnostic disable-next-line: duplicate-set-field
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+	opts = opts or {}
+	opts.border = opts.border or border
+	return orig_open_floating_preview(contents, syntax, opts, ...)
+end
+
+vim.diagnostic.config({
+	float = { border = border },
+})
+
+vim.g.transparent_enabled = true
+
+require("transparent").setup({
+	extra_groups = {
+		"NormalFloat",
+		"FloatBorder",
+		"DiagnosticFloatingError",
+		"DiagnosticFloatingWarn",
+		"DiagnosticFloatingInfo",
+		"DiagnosticFloatingHint",
+	},
+})
+
 vim.cmd("colorscheme darkthrone")
 
 -- Treesitter
